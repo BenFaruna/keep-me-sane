@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+
+{% block head %}
+<title>Update Task</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container">
+    <div class="content">
+        <h1>Update Task</h1>
+
+        <form action='/update/{{task.id}}', method="POST">
+            <input type="text" name="content" id="content" value={{task.content}}><br>
+            Urgency:
+            <input type="radio" name="urgency" id="urgency" value="3">low
+            <input type="radio" name="urgency" id="urgency" value="2" checked>mid
+            <input type="radio" name="urgency" id="urgency" value="1">high
+            <br>
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</div>
+{% endblock %}
+
