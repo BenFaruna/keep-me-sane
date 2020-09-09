@@ -12,7 +12,7 @@
         <h1>Update Task</h1>
 
         <form action='/update/{{task.id}}', method="POST">
-            <input type="text" name="content" id="content" value={{task.content}}><br>
+            <input type="text" name="content" id="content" value="{{task.content}}"><br>
             Urgency:
             <input type="radio" name="urgency" id="urgency" value="3">low
             <input type="radio" name="urgency" id="urgency" value="2" checked>mid
