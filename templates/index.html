@@ -46,6 +46,8 @@
 
         {% endif %}
 
+        <p>Add Task:</p>
+
         <form action='/', method="POST">
             <input type="text" name="content" id="content"><br>
             Urgency:
@@ -53,7 +55,7 @@
             <input type="radio" name="urgency" id="urgency" value="2" checked>mid
             <input type="radio" name="urgency" id="urgency" value="1">high
             <br>
-            <input type="submit" value="Add Task">
+            <input class="btn" type="submit" value="Add Task">
         </form>
     </div>
 </div>
